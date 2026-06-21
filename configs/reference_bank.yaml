@@ -1,0 +1,80 @@
+protocol_version: 1
+frozen_before_corrupted_eval: true
+bank_name: classical_reference_bank_v1
+random_seed: 42
+subset_seed: 3407
+train_fractions: [0.20, 0.40, 0.60, 0.80, 1.00]
+cluster_unit: base_configuration_id
+fusion_boosting_backend: hist_gradient_boosting
+feature_families:
+  time_stats:
+    segment_bins: [1, 2, 4]
+    statistics: [mean, std, min, max, median, iqr]
+  fft_stats:
+    bands: [4, 8, 16]
+    statistics: [mean, std, energy]
+  dwt_energy:
+    wavelets: [haar, db2, sym2]
+    levels: [2, 3, 4]
+  stft_bands:
+    windows: [32, 64, 128]
+    bands: [4, 8, 16]
+  autocorrelation:
+    lags: [8, 16, 32]
+    normalize: true
+  pca_raw:
+    component_budget_by_capacity:
+      small: 16
+      medium: 48
+      large: 96
+classifiers:
+  logistic_regression:
+    family: linear
+    capacity_params:
+      small: {C: 0.1, max_iter: 2000}
+      medium: {C: 1.0, max_iter: 3000}
+      large: {C: 10.0, max_iter: 5000}
+  linear_svm:
+    family: linear_svm
+    capacity_params:
+      small: {C: 0.1}
+      medium: {C: 1.0}
+      large: {C: 10.0}
+  rbf_svm:
+    family: kernel_svm
+    capacity_params:
+      small: {C: 0.5, gamma: scale}
+      medium: {C: 2.0, gamma: scale}
+      large: {C: 8.0, gamma: auto}
+  knn:
+    family: instance_based
+    capacity_params:
+      small: {n_neighbors: 11, weights: uniform}
+      medium: {n_neighbors: 7, weights: distance}
+      large: {n_neighbors: 3, weights: distance}
+  random_forest:
+    family: tree_ensemble
+    capacity_params:
+      small: {n_estimators: 100, max_depth: 8}
+      medium: {n_estimators: 300, max_depth: 16}
+      large: {n_estimators: 600, max_depth: null}
+  extra_trees:
+    family: tree_ensemble
+    capacity_params:
+      small: {n_estimators: 100, max_depth: 8}
+      medium: {n_estimators: 300, max_depth: 16}
+      large: {n_estimators: 600, max_depth: null}
+  hist_gradient_boosting:
+    family: boosting
+    capacity_params:
+      small: {max_iter: 100, max_leaf_nodes: 15, learning_rate: 0.08}
+      medium: {max_iter: 200, max_leaf_nodes: 31, learning_rate: 0.06}
+      large: {max_iter: 350, max_leaf_nodes: 63, learning_rate: 0.04}
+  lda:
+    family: linear_discriminant
+    capacity_params:
+      small: {solver: svd, shrinkage: null}
+      medium: {solver: lsqr, shrinkage: auto}
+      large: {solver: eigen, shrinkage: auto}
+expected_unique_base_configurations: 144
+expected_training_points_with_fractions: 720

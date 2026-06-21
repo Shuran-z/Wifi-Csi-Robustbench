@@ -1,0 +1,59 @@
+project:
+  name: iot_wifi_csi_er_benchmark
+  dataset: UT_HAR
+  seed: 42
+paths:
+  raw_data: data/raw
+  processed_data: data/processed
+  splits: data/splits
+  outputs: outputs
+  checkpoints: outputs/checkpoints
+  results: outputs/results
+  figures: outputs/figures
+  logs: outputs/logs
+data:
+  dataset: "UT_HAR"
+  use_subset: false
+  subset_train_per_class: null
+  subset_test_per_class: null
+  random_seed: 42
+  allow_synthetic_smoke: false
+  input_shape: [1, 250, 90]
+corruption:
+  type: "gaussian"
+  severities: [1, 2, 3, 4, 5]
+  alphas: [0.02, 0.05, 0.10, 0.15, 0.20]
+  seed: 42
+corruptions:
+  enabled: [gaussian, subcarrier_mask, time_dropout, amplitude_scaling]
+  severities: [1, 2, 3, 4, 5]
+  seed: 42
+  cache_dir: data/processed/corruptions
+  gaussian:
+    alphas: [0.05, 0.10, 0.20, 0.40, 0.60]
+  subcarrier_mask:
+    ratios: [0.05, 0.10, 0.20, 0.30, 0.40]
+    fill_value: 0.0
+  time_dropout:
+    ratios: [0.05, 0.10, 0.20, 0.30, 0.40]
+    fill_value: 0.0
+  amplitude_scaling:
+    ranges:
+      - [0.95, 1.05]
+      - [0.90, 1.10]
+      - [0.80, 1.20]
+      - [0.70, 1.30]
+      - [0.50, 1.50]
+train:
+  epochs: 30
+  batch_size: 128
+  lr: 0.001
+  weight_decay: 0.0001
+  patience: 8
+  seed: 42
+  use_amp: true
+  num_workers: 4
+  val_fraction: 0.15
+classical:
+  pca_components: 64
+  random_seed: 42

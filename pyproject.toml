@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wifi-csi-robustbench"
+version = "1.0.0"
+description = "Research-grade WiFi CSI robustness benchmark with validity-gated CSI-ER"
+requires-python = ">=3.12"
+dependencies = ["numpy", "scipy", "pandas", "scikit-learn", "matplotlib", "pyyaml", "joblib", "tqdm", "torch", "pywavelets"]
+
+[project.scripts]
+csi-robustbench = "csi_robustbench.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+ignore = ["E702"]
+
+[tool.ruff.lint.per-file-ignores]
+"scripts/*.py" = ["E401", "E402", "E701", "E703", "E712", "F401", "F841"]
+"src/csi_er/*.py" = ["E401", "E701", "E703", "E712", "F401"]
+
+[tool.mypy]
+ignore_missing_imports = true
+python_version = "3.12"

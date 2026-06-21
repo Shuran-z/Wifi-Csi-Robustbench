@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Local data and outputs
+data/
+outputs/
+outputs-*/
+outputs_*/
+checkpoints/
+classical-shards/
+classical_shards/
+
+# Large model and dataset artifacts
+*.pt
+*.pth
+*.ckpt
+*.joblib
+*.pkl
+*.pickle
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

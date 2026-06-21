@@ -1,0 +1,47 @@
+protocol_version: 1
+frozen_before_corrupted_eval: true
+primary_metric: macro_f1
+secondary_metrics: [accuracy, balanced_accuracy]
+transformation:
+  name: probit
+  epsilon_rule: 0.5 / n_test
+main_reference_bank: broad
+broad_reference_includes: [classical_reference_bank_v1, standard_erm_deep_model_bank_v1]
+main_regression: probit_ols
+sensitivity_regressions: [huber, theil_sen]
+family_aware_cv:
+  - leave_one_feature_family_out
+  - leave_one_classifier_family_out
+  - leave_one_deep_architecture_family_out
+validity_gate:
+  valid:
+    min_unique_configs: 30
+    min_group_cv_r2: 0.50
+    require_positive_slope: true
+    require_target_in_support: true
+    min_bootstrap_success_rate: 0.95
+  exploratory:
+    min_group_cv_r2: 0.20
+    max_group_cv_r2_exclusive: 0.50
+    require_positive_slope: true
+    require_target_in_support: true
+  statuses: [VALID, EXPLORATORY, OUT_OF_SUPPORT, INVALID_FIT]
+bootstrap:
+  n_resamples: 1000
+  cluster_unit: base_configuration_or_architecture_family
+  ci: 0.95
+corruptions:
+  canonical:
+    gaussian_snr_db: [30, 25, 20, 15, 10]
+    subcarrier_mask_ratio: [0.05, 0.10, 0.20, 0.30, 0.40]
+    time_dropout_ratio: [0.05, 0.10, 0.20, 0.30, 0.40]
+    amplitude_scaling_gain_db: [1, 2, 3, 4, 6]
+  structured:
+    contiguous_subcarrier_block_ratio: [0.05, 0.10, 0.20, 0.30, 0.40]
+    burst_time_dropout_ratio: [0.05, 0.10, 0.20, 0.30, 0.40]
+    smooth_gain_drift_db: [1, 2, 3, 4, 6]
+corruption_seeds: [42, 123, 2026, 3407, 777]
+data_policy:
+  fit_per_dataset: true
+  no_unstratified_cross_dataset_ols: true
+  aggregate_with_standardized_residuals: true

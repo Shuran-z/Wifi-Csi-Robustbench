@@ -1,0 +1,9 @@
+name: release
+on:
+  workflow_dispatch:
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: tar -czf wifi-csi-robustbench-source.tar.gz README.md src configs docs scripts tests

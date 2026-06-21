@@ -1,0 +1,7 @@
+OK widar__time_stats__logistic_regression natural_macro_f1=0.0815
+OK widar__time_stats__random_forest natural_macro_f1=0.0873
+OK widar__fft_stats__logistic_regression natural_macro_f1=0.1657
+OK widar__fft_stats__random_forest natural_macro_f1=0.1636
+OK widar__autocorrelation__logistic_regression natural_macro_f1=0.0662
+OK widar__autocorrelation__random_forest natural_macro_f1=0.0744
+outputs_final_complete_20260620_123920/reports/widar_natural_shift_report.md

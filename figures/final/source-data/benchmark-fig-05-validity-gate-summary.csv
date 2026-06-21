@@ -1,0 +1,7 @@
+metric,status,count
+Macro-F1,OUT_OF_SUPPORT,479
+Macro-F1,EXPLORATORY,242
+Macro-F1,VALID,53
+Accuracy,OUT_OF_SUPPORT,534
+Accuracy,EXPLORATORY,187
+Accuracy,VALID,53

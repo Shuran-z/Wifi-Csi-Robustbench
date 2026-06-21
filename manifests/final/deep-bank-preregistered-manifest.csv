@@ -1,0 +1,109 @@
+dataset,family,size,train_seed,model_params,base_configuration_id,configuration_id,run_id
+UT_HAR,MLP,small,42,"{'hidden': [128, 64], 'dropout': 0.1}",deep__MLP__small,deep__MLP__small__seed42,deep__MLP__small__seed42
+UT_HAR,MLP,small,123,"{'hidden': [128, 64], 'dropout': 0.1}",deep__MLP__small,deep__MLP__small__seed123,deep__MLP__small__seed123
+UT_HAR,MLP,small,2026,"{'hidden': [128, 64], 'dropout': 0.1}",deep__MLP__small,deep__MLP__small__seed2026,deep__MLP__small__seed2026
+UT_HAR,MLP,medium,42,"{'hidden': [256, 128], 'dropout': 0.2}",deep__MLP__medium,deep__MLP__medium__seed42,deep__MLP__medium__seed42
+UT_HAR,MLP,medium,123,"{'hidden': [256, 128], 'dropout': 0.2}",deep__MLP__medium,deep__MLP__medium__seed123,deep__MLP__medium__seed123
+UT_HAR,MLP,medium,2026,"{'hidden': [256, 128], 'dropout': 0.2}",deep__MLP__medium,deep__MLP__medium__seed2026,deep__MLP__medium__seed2026
+UT_HAR,MLP,large,42,"{'hidden': [512, 256, 128], 'dropout': 0.3}",deep__MLP__large,deep__MLP__large__seed42,deep__MLP__large__seed42
+UT_HAR,MLP,large,123,"{'hidden': [512, 256, 128], 'dropout': 0.3}",deep__MLP__large,deep__MLP__large__seed123,deep__MLP__large__seed123
+UT_HAR,MLP,large,2026,"{'hidden': [512, 256, 128], 'dropout': 0.3}",deep__MLP__large,deep__MLP__large__seed2026,deep__MLP__large__seed2026
+UT_HAR,CNN,small,42,"{'channels': [16, 32], 'blocks': 2}",deep__CNN__small,deep__CNN__small__seed42,deep__CNN__small__seed42
+UT_HAR,CNN,small,123,"{'channels': [16, 32], 'blocks': 2}",deep__CNN__small,deep__CNN__small__seed123,deep__CNN__small__seed123
+UT_HAR,CNN,small,2026,"{'channels': [16, 32], 'blocks': 2}",deep__CNN__small,deep__CNN__small__seed2026,deep__CNN__small__seed2026
+UT_HAR,CNN,medium,42,"{'channels': [32, 64, 96], 'blocks': 3}",deep__CNN__medium,deep__CNN__medium__seed42,deep__CNN__medium__seed42
+UT_HAR,CNN,medium,123,"{'channels': [32, 64, 96], 'blocks': 3}",deep__CNN__medium,deep__CNN__medium__seed123,deep__CNN__medium__seed123
+UT_HAR,CNN,medium,2026,"{'channels': [32, 64, 96], 'blocks': 3}",deep__CNN__medium,deep__CNN__medium__seed2026,deep__CNN__medium__seed2026
+UT_HAR,CNN,large,42,"{'channels': [32, 64, 128, 192], 'blocks': 4}",deep__CNN__large,deep__CNN__large__seed42,deep__CNN__large__seed42
+UT_HAR,CNN,large,123,"{'channels': [32, 64, 128, 192], 'blocks': 4}",deep__CNN__large,deep__CNN__large__seed123,deep__CNN__large__seed123
+UT_HAR,CNN,large,2026,"{'channels': [32, 64, 128, 192], 'blocks': 4}",deep__CNN__large,deep__CNN__large__seed2026,deep__CNN__large__seed2026
+UT_HAR,GRU,small,42,"{'hidden_size': 64, 'num_layers': 1, 'dropout': 0.0}",deep__GRU__small,deep__GRU__small__seed42,deep__GRU__small__seed42
+UT_HAR,GRU,small,123,"{'hidden_size': 64, 'num_layers': 1, 'dropout': 0.0}",deep__GRU__small,deep__GRU__small__seed123,deep__GRU__small__seed123
+UT_HAR,GRU,small,2026,"{'hidden_size': 64, 'num_layers': 1, 'dropout': 0.0}",deep__GRU__small,deep__GRU__small__seed2026,deep__GRU__small__seed2026
+UT_HAR,GRU,medium,42,"{'hidden_size': 128, 'num_layers': 1, 'dropout': 0.0}",deep__GRU__medium,deep__GRU__medium__seed42,deep__GRU__medium__seed42
+UT_HAR,GRU,medium,123,"{'hidden_size': 128, 'num_layers': 1, 'dropout': 0.0}",deep__GRU__medium,deep__GRU__medium__seed123,deep__GRU__medium__seed123
+UT_HAR,GRU,medium,2026,"{'hidden_size': 128, 'num_layers': 1, 'dropout': 0.0}",deep__GRU__medium,deep__GRU__medium__seed2026,deep__GRU__medium__seed2026
+UT_HAR,GRU,large,42,"{'hidden_size': 192, 'num_layers': 2, 'dropout': 0.2}",deep__GRU__large,deep__GRU__large__seed42,deep__GRU__large__seed42
+UT_HAR,GRU,large,123,"{'hidden_size': 192, 'num_layers': 2, 'dropout': 0.2}",deep__GRU__large,deep__GRU__large__seed123,deep__GRU__large__seed123
+UT_HAR,GRU,large,2026,"{'hidden_size': 192, 'num_layers': 2, 'dropout': 0.2}",deep__GRU__large,deep__GRU__large__seed2026,deep__GRU__large__seed2026
+UT_HAR,LSTM,small,42,"{'hidden_size': 64, 'num_layers': 1, 'dropout': 0.0}",deep__LSTM__small,deep__LSTM__small__seed42,deep__LSTM__small__seed42
+UT_HAR,LSTM,small,123,"{'hidden_size': 64, 'num_layers': 1, 'dropout': 0.0}",deep__LSTM__small,deep__LSTM__small__seed123,deep__LSTM__small__seed123
+UT_HAR,LSTM,small,2026,"{'hidden_size': 64, 'num_layers': 1, 'dropout': 0.0}",deep__LSTM__small,deep__LSTM__small__seed2026,deep__LSTM__small__seed2026
+UT_HAR,LSTM,medium,42,"{'hidden_size': 128, 'num_layers': 1, 'dropout': 0.0}",deep__LSTM__medium,deep__LSTM__medium__seed42,deep__LSTM__medium__seed42
+UT_HAR,LSTM,medium,123,"{'hidden_size': 128, 'num_layers': 1, 'dropout': 0.0}",deep__LSTM__medium,deep__LSTM__medium__seed123,deep__LSTM__medium__seed123
+UT_HAR,LSTM,medium,2026,"{'hidden_size': 128, 'num_layers': 1, 'dropout': 0.0}",deep__LSTM__medium,deep__LSTM__medium__seed2026,deep__LSTM__medium__seed2026
+UT_HAR,LSTM,large,42,"{'hidden_size': 192, 'num_layers': 2, 'dropout': 0.2}",deep__LSTM__large,deep__LSTM__large__seed42,deep__LSTM__large__seed42
+UT_HAR,LSTM,large,123,"{'hidden_size': 192, 'num_layers': 2, 'dropout': 0.2}",deep__LSTM__large,deep__LSTM__large__seed123,deep__LSTM__large__seed123
+UT_HAR,LSTM,large,2026,"{'hidden_size': 192, 'num_layers': 2, 'dropout': 0.2}",deep__LSTM__large,deep__LSTM__large__seed2026,deep__LSTM__large__seed2026
+UT_HAR,CNN-GRU,small,42,"{'channels': [16, 32], 'hidden_size': 64}",deep__CNN-GRU__small,deep__CNN-GRU__small__seed42,deep__CNN-GRU__small__seed42
+UT_HAR,CNN-GRU,small,123,"{'channels': [16, 32], 'hidden_size': 64}",deep__CNN-GRU__small,deep__CNN-GRU__small__seed123,deep__CNN-GRU__small__seed123
+UT_HAR,CNN-GRU,small,2026,"{'channels': [16, 32], 'hidden_size': 64}",deep__CNN-GRU__small,deep__CNN-GRU__small__seed2026,deep__CNN-GRU__small__seed2026
+UT_HAR,CNN-GRU,medium,42,"{'channels': [16, 32, 64], 'hidden_size': 96}",deep__CNN-GRU__medium,deep__CNN-GRU__medium__seed42,deep__CNN-GRU__medium__seed42
+UT_HAR,CNN-GRU,medium,123,"{'channels': [16, 32, 64], 'hidden_size': 96}",deep__CNN-GRU__medium,deep__CNN-GRU__medium__seed123,deep__CNN-GRU__medium__seed123
+UT_HAR,CNN-GRU,medium,2026,"{'channels': [16, 32, 64], 'hidden_size': 96}",deep__CNN-GRU__medium,deep__CNN-GRU__medium__seed2026,deep__CNN-GRU__medium__seed2026
+UT_HAR,CNN-GRU,large,42,"{'channels': [32, 64, 96], 'hidden_size': 160}",deep__CNN-GRU__large,deep__CNN-GRU__large__seed42,deep__CNN-GRU__large__seed42
+UT_HAR,CNN-GRU,large,123,"{'channels': [32, 64, 96], 'hidden_size': 160}",deep__CNN-GRU__large,deep__CNN-GRU__large__seed123,deep__CNN-GRU__large__seed123
+UT_HAR,CNN-GRU,large,2026,"{'channels': [32, 64, 96], 'hidden_size': 160}",deep__CNN-GRU__large,deep__CNN-GRU__large__seed2026,deep__CNN-GRU__large__seed2026
+UT_HAR,Transformer,small,42,"{'dim': 64, 'depth': 1, 'heads': 2, 'patch_size': [10, 10]}",deep__Transformer__small,deep__Transformer__small__seed42,deep__Transformer__small__seed42
+UT_HAR,Transformer,small,123,"{'dim': 64, 'depth': 1, 'heads': 2, 'patch_size': [10, 10]}",deep__Transformer__small,deep__Transformer__small__seed123,deep__Transformer__small__seed123
+UT_HAR,Transformer,small,2026,"{'dim': 64, 'depth': 1, 'heads': 2, 'patch_size': [10, 10]}",deep__Transformer__small,deep__Transformer__small__seed2026,deep__Transformer__small__seed2026
+UT_HAR,Transformer,medium,42,"{'dim': 128, 'depth': 2, 'heads': 4, 'patch_size': [10, 10]}",deep__Transformer__medium,deep__Transformer__medium__seed42,deep__Transformer__medium__seed42
+UT_HAR,Transformer,medium,123,"{'dim': 128, 'depth': 2, 'heads': 4, 'patch_size': [10, 10]}",deep__Transformer__medium,deep__Transformer__medium__seed123,deep__Transformer__medium__seed123
+UT_HAR,Transformer,medium,2026,"{'dim': 128, 'depth': 2, 'heads': 4, 'patch_size': [10, 10]}",deep__Transformer__medium,deep__Transformer__medium__seed2026,deep__Transformer__medium__seed2026
+UT_HAR,Transformer,large,42,"{'dim': 192, 'depth': 3, 'heads': 6, 'patch_size': [10, 10]}",deep__Transformer__large,deep__Transformer__large__seed42,deep__Transformer__large__seed42
+UT_HAR,Transformer,large,123,"{'dim': 192, 'depth': 3, 'heads': 6, 'patch_size': [10, 10]}",deep__Transformer__large,deep__Transformer__large__seed123,deep__Transformer__large__seed123
+UT_HAR,Transformer,large,2026,"{'dim': 192, 'depth': 3, 'heads': 6, 'patch_size': [10, 10]}",deep__Transformer__large,deep__Transformer__large__seed2026,deep__Transformer__large__seed2026
+NTU_Fi_HAR,MLP,small,42,"{'hidden': [128, 64], 'dropout': 0.1}",deep__MLP__small,deep__MLP__small__seed42,deep__MLP__small__seed42
+NTU_Fi_HAR,MLP,small,123,"{'hidden': [128, 64], 'dropout': 0.1}",deep__MLP__small,deep__MLP__small__seed123,deep__MLP__small__seed123
+NTU_Fi_HAR,MLP,small,2026,"{'hidden': [128, 64], 'dropout': 0.1}",deep__MLP__small,deep__MLP__small__seed2026,deep__MLP__small__seed2026
+NTU_Fi_HAR,MLP,medium,42,"{'hidden': [256, 128], 'dropout': 0.2}",deep__MLP__medium,deep__MLP__medium__seed42,deep__MLP__medium__seed42
+NTU_Fi_HAR,MLP,medium,123,"{'hidden': [256, 128], 'dropout': 0.2}",deep__MLP__medium,deep__MLP__medium__seed123,deep__MLP__medium__seed123
+NTU_Fi_HAR,MLP,medium,2026,"{'hidden': [256, 128], 'dropout': 0.2}",deep__MLP__medium,deep__MLP__medium__seed2026,deep__MLP__medium__seed2026
+NTU_Fi_HAR,MLP,large,42,"{'hidden': [512, 256, 128], 'dropout': 0.3}",deep__MLP__large,deep__MLP__large__seed42,deep__MLP__large__seed42
+NTU_Fi_HAR,MLP,large,123,"{'hidden': [512, 256, 128], 'dropout': 0.3}",deep__MLP__large,deep__MLP__large__seed123,deep__MLP__large__seed123
+NTU_Fi_HAR,MLP,large,2026,"{'hidden': [512, 256, 128], 'dropout': 0.3}",deep__MLP__large,deep__MLP__large__seed2026,deep__MLP__large__seed2026
+NTU_Fi_HAR,CNN,small,42,"{'channels': [16, 32], 'blocks': 2}",deep__CNN__small,deep__CNN__small__seed42,deep__CNN__small__seed42
+NTU_Fi_HAR,CNN,small,123,"{'channels': [16, 32], 'blocks': 2}",deep__CNN__small,deep__CNN__small__seed123,deep__CNN__small__seed123
+NTU_Fi_HAR,CNN,small,2026,"{'channels': [16, 32], 'blocks': 2}",deep__CNN__small,deep__CNN__small__seed2026,deep__CNN__small__seed2026
+NTU_Fi_HAR,CNN,medium,42,"{'channels': [32, 64, 96], 'blocks': 3}",deep__CNN__medium,deep__CNN__medium__seed42,deep__CNN__medium__seed42
+NTU_Fi_HAR,CNN,medium,123,"{'channels': [32, 64, 96], 'blocks': 3}",deep__CNN__medium,deep__CNN__medium__seed123,deep__CNN__medium__seed123
+NTU_Fi_HAR,CNN,medium,2026,"{'channels': [32, 64, 96], 'blocks': 3}",deep__CNN__medium,deep__CNN__medium__seed2026,deep__CNN__medium__seed2026
+NTU_Fi_HAR,CNN,large,42,"{'channels': [32, 64, 128, 192], 'blocks': 4}",deep__CNN__large,deep__CNN__large__seed42,deep__CNN__large__seed42
+NTU_Fi_HAR,CNN,large,123,"{'channels': [32, 64, 128, 192], 'blocks': 4}",deep__CNN__large,deep__CNN__large__seed123,deep__CNN__large__seed123
+NTU_Fi_HAR,CNN,large,2026,"{'channels': [32, 64, 128, 192], 'blocks': 4}",deep__CNN__large,deep__CNN__large__seed2026,deep__CNN__large__seed2026
+NTU_Fi_HAR,GRU,small,42,"{'hidden_size': 64, 'num_layers': 1, 'dropout': 0.0}",deep__GRU__small,deep__GRU__small__seed42,deep__GRU__small__seed42
+NTU_Fi_HAR,GRU,small,123,"{'hidden_size': 64, 'num_layers': 1, 'dropout': 0.0}",deep__GRU__small,deep__GRU__small__seed123,deep__GRU__small__seed123
+NTU_Fi_HAR,GRU,small,2026,"{'hidden_size': 64, 'num_layers': 1, 'dropout': 0.0}",deep__GRU__small,deep__GRU__small__seed2026,deep__GRU__small__seed2026
+NTU_Fi_HAR,GRU,medium,42,"{'hidden_size': 128, 'num_layers': 1, 'dropout': 0.0}",deep__GRU__medium,deep__GRU__medium__seed42,deep__GRU__medium__seed42
+NTU_Fi_HAR,GRU,medium,123,"{'hidden_size': 128, 'num_layers': 1, 'dropout': 0.0}",deep__GRU__medium,deep__GRU__medium__seed123,deep__GRU__medium__seed123
+NTU_Fi_HAR,GRU,medium,2026,"{'hidden_size': 128, 'num_layers': 1, 'dropout': 0.0}",deep__GRU__medium,deep__GRU__medium__seed2026,deep__GRU__medium__seed2026
+NTU_Fi_HAR,GRU,large,42,"{'hidden_size': 192, 'num_layers': 2, 'dropout': 0.2}",deep__GRU__large,deep__GRU__large__seed42,deep__GRU__large__seed42
+NTU_Fi_HAR,GRU,large,123,"{'hidden_size': 192, 'num_layers': 2, 'dropout': 0.2}",deep__GRU__large,deep__GRU__large__seed123,deep__GRU__large__seed123
+NTU_Fi_HAR,GRU,large,2026,"{'hidden_size': 192, 'num_layers': 2, 'dropout': 0.2}",deep__GRU__large,deep__GRU__large__seed2026,deep__GRU__large__seed2026
+NTU_Fi_HAR,LSTM,small,42,"{'hidden_size': 64, 'num_layers': 1, 'dropout': 0.0}",deep__LSTM__small,deep__LSTM__small__seed42,deep__LSTM__small__seed42
+NTU_Fi_HAR,LSTM,small,123,"{'hidden_size': 64, 'num_layers': 1, 'dropout': 0.0}",deep__LSTM__small,deep__LSTM__small__seed123,deep__LSTM__small__seed123
+NTU_Fi_HAR,LSTM,small,2026,"{'hidden_size': 64, 'num_layers': 1, 'dropout': 0.0}",deep__LSTM__small,deep__LSTM__small__seed2026,deep__LSTM__small__seed2026
+NTU_Fi_HAR,LSTM,medium,42,"{'hidden_size': 128, 'num_layers': 1, 'dropout': 0.0}",deep__LSTM__medium,deep__LSTM__medium__seed42,deep__LSTM__medium__seed42
+NTU_Fi_HAR,LSTM,medium,123,"{'hidden_size': 128, 'num_layers': 1, 'dropout': 0.0}",deep__LSTM__medium,deep__LSTM__medium__seed123,deep__LSTM__medium__seed123
+NTU_Fi_HAR,LSTM,medium,2026,"{'hidden_size': 128, 'num_layers': 1, 'dropout': 0.0}",deep__LSTM__medium,deep__LSTM__medium__seed2026,deep__LSTM__medium__seed2026
+NTU_Fi_HAR,LSTM,large,42,"{'hidden_size': 192, 'num_layers': 2, 'dropout': 0.2}",deep__LSTM__large,deep__LSTM__large__seed42,deep__LSTM__large__seed42
+NTU_Fi_HAR,LSTM,large,123,"{'hidden_size': 192, 'num_layers': 2, 'dropout': 0.2}",deep__LSTM__large,deep__LSTM__large__seed123,deep__LSTM__large__seed123
+NTU_Fi_HAR,LSTM,large,2026,"{'hidden_size': 192, 'num_layers': 2, 'dropout': 0.2}",deep__LSTM__large,deep__LSTM__large__seed2026,deep__LSTM__large__seed2026
+NTU_Fi_HAR,CNN-GRU,small,42,"{'channels': [16, 32], 'hidden_size': 64}",deep__CNN-GRU__small,deep__CNN-GRU__small__seed42,deep__CNN-GRU__small__seed42
+NTU_Fi_HAR,CNN-GRU,small,123,"{'channels': [16, 32], 'hidden_size': 64}",deep__CNN-GRU__small,deep__CNN-GRU__small__seed123,deep__CNN-GRU__small__seed123
+NTU_Fi_HAR,CNN-GRU,small,2026,"{'channels': [16, 32], 'hidden_size': 64}",deep__CNN-GRU__small,deep__CNN-GRU__small__seed2026,deep__CNN-GRU__small__seed2026
+NTU_Fi_HAR,CNN-GRU,medium,42,"{'channels': [16, 32, 64], 'hidden_size': 96}",deep__CNN-GRU__medium,deep__CNN-GRU__medium__seed42,deep__CNN-GRU__medium__seed42
+NTU_Fi_HAR,CNN-GRU,medium,123,"{'channels': [16, 32, 64], 'hidden_size': 96}",deep__CNN-GRU__medium,deep__CNN-GRU__medium__seed123,deep__CNN-GRU__medium__seed123
+NTU_Fi_HAR,CNN-GRU,medium,2026,"{'channels': [16, 32, 64], 'hidden_size': 96}",deep__CNN-GRU__medium,deep__CNN-GRU__medium__seed2026,deep__CNN-GRU__medium__seed2026
+NTU_Fi_HAR,CNN-GRU,large,42,"{'channels': [32, 64, 96], 'hidden_size': 160}",deep__CNN-GRU__large,deep__CNN-GRU__large__seed42,deep__CNN-GRU__large__seed42
+NTU_Fi_HAR,CNN-GRU,large,123,"{'channels': [32, 64, 96], 'hidden_size': 160}",deep__CNN-GRU__large,deep__CNN-GRU__large__seed123,deep__CNN-GRU__large__seed123
+NTU_Fi_HAR,CNN-GRU,large,2026,"{'channels': [32, 64, 96], 'hidden_size': 160}",deep__CNN-GRU__large,deep__CNN-GRU__large__seed2026,deep__CNN-GRU__large__seed2026
+NTU_Fi_HAR,Transformer,small,42,"{'dim': 64, 'depth': 1, 'heads': 2, 'patch_size': [10, 10]}",deep__Transformer__small,deep__Transformer__small__seed42,deep__Transformer__small__seed42
+NTU_Fi_HAR,Transformer,small,123,"{'dim': 64, 'depth': 1, 'heads': 2, 'patch_size': [10, 10]}",deep__Transformer__small,deep__Transformer__small__seed123,deep__Transformer__small__seed123
+NTU_Fi_HAR,Transformer,small,2026,"{'dim': 64, 'depth': 1, 'heads': 2, 'patch_size': [10, 10]}",deep__Transformer__small,deep__Transformer__small__seed2026,deep__Transformer__small__seed2026
+NTU_Fi_HAR,Transformer,medium,42,"{'dim': 128, 'depth': 2, 'heads': 4, 'patch_size': [10, 10]}",deep__Transformer__medium,deep__Transformer__medium__seed42,deep__Transformer__medium__seed42
+NTU_Fi_HAR,Transformer,medium,123,"{'dim': 128, 'depth': 2, 'heads': 4, 'patch_size': [10, 10]}",deep__Transformer__medium,deep__Transformer__medium__seed123,deep__Transformer__medium__seed123
+NTU_Fi_HAR,Transformer,medium,2026,"{'dim': 128, 'depth': 2, 'heads': 4, 'patch_size': [10, 10]}",deep__Transformer__medium,deep__Transformer__medium__seed2026,deep__Transformer__medium__seed2026
+NTU_Fi_HAR,Transformer,large,42,"{'dim': 192, 'depth': 3, 'heads': 6, 'patch_size': [10, 10]}",deep__Transformer__large,deep__Transformer__large__seed42,deep__Transformer__large__seed42
+NTU_Fi_HAR,Transformer,large,123,"{'dim': 192, 'depth': 3, 'heads': 6, 'patch_size': [10, 10]}",deep__Transformer__large,deep__Transformer__large__seed123,deep__Transformer__large__seed123
+NTU_Fi_HAR,Transformer,large,2026,"{'dim': 192, 'depth': 3, 'heads': 6, 'patch_size': [10, 10]}",deep__Transformer__large,deep__Transformer__large__seed2026,deep__Transformer__large__seed2026
